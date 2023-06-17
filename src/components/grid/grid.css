@@ -2,7 +2,7 @@
   margin-top: 30px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end; /* Alinear elementos en la parte inferior */
   justify-content: center;
 
   height: 400px;
@@ -11,36 +11,56 @@
   margin-left: 30px;
   margin-right: 30px;
 }
-
+.gridWeap {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 100px;
+}
 .sq1 {
-  background-image: url('../../photos/texture.png');
+  background-image: url("../../photos/texture.png");
   object-fit: cover;
   height: 100%;
   width: 36%;
-
+  display: flex; /* Agregar display flex */
+  align-items: flex-end; /* Alinear elementos en la parte inferior */
+  overflow: hidden;
 }
+
 .sq2 {
-  background-image: url('../../../assets/conter.jpg') ;
-  object-fit: scale-down;
+  background-image: url("../../../assets/conter.jpg");
+  object-fit: cover;
   object-position: center;
   height: 100%;
   width: 60%;
+  display: flex; /* Agregar display flex */
+  align-items: flex-end; /* Alinear elementos en la parte inferior */
+  justify-content: flex-end;
+  overflow: hidden;
 }
 
 .prod {
   font-family: "Oswald", sans-serif;
   font-size: 80px;
   font-weight: bold;
-
-  margin-top: 70%;
   color: whitesmoke;
-  margin-bottom: 0;
-  margin-left: 20px;
-
- 
-
-line-height: 70px;
-
-
-
+  margin: 0;
+  margin-bottom: 10px; /* Aumentar margen inferior para separar del borde */
+  margin-left: 10px;
 }
+@media (max-width: 1024px) { /* Media query para tablet */
+  .gridContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sq1,
+  .sq2 {
+    width: 80%;
+  }
+  .prod {
+    font-size: 50px;
+  }
+}
+
