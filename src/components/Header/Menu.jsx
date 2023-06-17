@@ -15,9 +15,12 @@ export default function Menu() {
     <div id="menu">
       <ul className={`list ${showList ? "show" : ""}`}>
         <Link to="/products">
-          <li>Productos</li>
+          <li style={{textDecoration: 'none'}}>Productos</li>
         </Link>
-        <li>Kits</li>
+        <Link to='/kits'>
+        <li style={{textDecoration: 'none'}}>Kits</li>
+
+        </Link>
       </ul>
     </div>
   );

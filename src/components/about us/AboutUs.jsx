@@ -3,7 +3,7 @@ import React from "react";
 export default function AboutUs() {
   return (
     <div style={{ marginTop: "40px", marginLeft: "25px", width: '85%', marginRight: '30px'}}>
-      <text
+      <span
         style={{
           fontSize: "30px",
           fontWeight: '500',
@@ -11,11 +11,11 @@ export default function AboutUs() {
           marginBottom: "10px",
           alignItems: "flex-start",
           marginLeft: '15px',
-          marginBottom: "10px",
+         
         }}
       >
         ACERCA DE NOSOTROS
-      </text>
+      </span>
       <article
         style={{
           margin: "10px",

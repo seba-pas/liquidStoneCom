@@ -1,8 +1,13 @@
 import React from 'react'
+import Header from "../Header/Header";
+import Title from "../title/Title";
 
 function Products() {
   return (
-    <div>Products</div>
+    <>
+    <Header />
+    <Title />
+  </>
   )
 }
 

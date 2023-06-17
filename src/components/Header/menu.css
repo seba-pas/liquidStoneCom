@@ -26,6 +26,14 @@
     font-weight: 300;
     font-size: 20px;
   }
+  .list > * {
+    text-decoration: none;
+    color: black;
+  }
+  .list.show > * {
+    text-decoration: none;
+    color: black;
+  }
   
   .list.show {
     opacity: 1;
