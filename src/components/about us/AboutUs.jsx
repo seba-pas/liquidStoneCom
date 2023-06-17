@@ -1,37 +1,11 @@
 import React from "react";
+import "./abotus.css";
 
 export default function AboutUs() {
   return (
-    <div style={{ marginTop: "40px", marginLeft: "25px", width: '85%', marginRight: '30px'}}>
-      <span
-        style={{
-          fontSize: "30px",
-          fontWeight: '500',
-          fontFamily: "roboto",
-          marginBottom: "10px",
-          alignItems: "flex-start",
-          marginLeft: '15px',
-         
-        }}
-      >
-        ACERCA DE NOSOTROS
-      </span>
-      <article
-        style={{
-          margin: "10px",
-          marginTop: "10px",
-          fontFamily: "roboto",
-          fontWeight: "300",
-          alignItems: "flex-start",
-          display: "flex",
-          width: "100%",
-          fontSize: "20px",
-          lineHeight: "1.4",
-          textAlign: "justify",
-          marginRight: '30px',
-        
-        }}
-      >
+    <div className="aboutContainer">
+      <span className="acercaDeNos">ACERCA DE NOSOTROS</span>
+      <article className="chatGPT">
         En Liquid Stone, estamos comprometidos en simplificar la industria de la
         resina epoxy, que durante años ha sido complicada e incluso intimidante.
         <br />
@@ -56,9 +30,9 @@ export default function AboutUs() {
         preguntas y brindarte el apoyo que necesites. Nos enorgullece ofrecer un
         servicio al cliente excepcional, porque creemos que cada proyecto merece
         la atención y el cuidado adecuados. Ya sea que estés buscando renovar
-        una mesada vieja, en Liquid Stone tenemos todo lo que necesitas.<br/>
+        una mesada vieja, en Liquid Stone tenemos todo lo que necesitas.
+        <br />
         Te invitamos a explorar nuestra amplia gama de productos.
-        
       </article>
     </div>
   );

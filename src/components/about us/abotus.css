@@ -1,0 +1,51 @@
+.aboutContainer {
+  margin-top: 40px;
+  margin-left: 25px;
+  width: 85%;
+  margin-right: 30px;
+}
+
+.acercaDeNos {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "roboto";
+  margin-bottom: 10px;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+
+.chatGPT {
+  margin: 10px;
+  margin-top: 10px;
+  font-family: "roboto";
+  font-weight: 300;
+  align-items: flex-start;
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: justify;
+  margin-right: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .chatGPT {
+    font-size: 14px;
+  }
+  .aboutContainer {
+    margin-left: 18px;
+
+    margin-right: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .chatGPT {
+    font-size: 12px;
+  }
+  .aboutContainer {
+    margin-left: 18px;
+
+    margin-right: 18px;
+  }
+}
